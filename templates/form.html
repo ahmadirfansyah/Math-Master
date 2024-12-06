@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hitung Luas Persegi</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h1>PROJECT ALGORITMA</h1>
+      </div>
+    </nav>
+    <!-- <div class="container">
+      <div class="box kelompok">
+        <h3>KELOMPOK</h3>
+        <p>Ahmad Irfansyah : 24.01.5179</p>
+        <p>Yoga Angga Pratama : 24.01.5186</p>
+        <p>Setya Andi Wardana : 24.01.5200</p>
+      </div>
+    </div> -->
+    <form action="/persegi" method="POST">
+      <div class="container">
+        <div class="box">
+          <h3>PERSEGI</h3>
+          <input
+            type="number"
+            id="panjang"
+            name="panjang"
+            placeholder="Masukkan Panjang"
+            required
+          />
+          <input
+            type="number"
+            id="lebar"
+            name="lebar"
+            placeholder="Masukkan Lebar"
+            required
+          />
+          <button class="button" type="submit">Hitung</button>
+        </div>
+      </div>
+    </form>
+    <form action="/segitiga" method="POST">
+      <div class="container">
+        <div class="box">
+          <h3>SEGITIGA</h3>
+          <input
+            type="number"
+            id="alas"
+            name="alas"
+            placeholder="Masukkan Alas"
+            required
+          />
+          <input
+            type="number"
+            id="tinggi"
+            name="tinggi"
+            placeholder="Masukkan Tinggi"
+            required
+          />
+          <button class="button" type="submit">Hitung</button>
+        </div>
+      </div>
+    </form>
+    <form action="/lingkaran" method="POST">
+      <div class="container">
+        <div class="box">
+          <h3>LINGKARAN</h3>
+          <input
+            type="number"
+            id="r"
+            name="r"
+            placeholder="Masukkan Jari-Jari"
+            required
+          />
+          <button class="button" type="submit">Hitung</button>
+        </div>
+      </div>
+    </form>
+    <form action="/volume-balok" method="POST">
+      <div class="container">
+        <div class="box">
+          <h3>VOLUME BALOK</h3>
+
+          <input
+            type="number"
+            id="panjang"
+            name="panjang"
+            placeholder="Masukkan Panjang"
+            required
+          />
+
+          <input
+            type="number"
+            id="lebar"
+            name="lebar"
+            placeholder="Masukkan Lebar"
+            required
+          />
+
+          <input
+            type="number"
+            id="tinggi"
+            name="tinggi"
+            placeholder="Masukkan Tinggi"
+            required
+          />
+          <button class="button" type="submit">Tinggi</button>
+        </div>
+      </div>
+    </form>
+    <div class="container">
+      <div class="box">
+        <footer>Copyright &#169; 2024</footer>
+      </div>
+    </div>
+
+    <script></script>
+  </body>
+</html>

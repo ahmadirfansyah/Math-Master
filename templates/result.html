@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasil Luas Persegi</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h1>MATH MASTER</h1>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="box result">
+        <h1>Hasil Perhitungan</h1>
+        <div>{{ text|safe }}</div>
+        <a class="button" href="/">Kembali</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="box">
+        <footer>Copyright &#169; 2024</footer>
+      </div>
+    </div>
+  </body>
+</html>
