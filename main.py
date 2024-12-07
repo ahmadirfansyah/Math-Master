@@ -5,9 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template_string(
-        open("templates/form.html").read()
-    )  # Ganti dengan path ke file HTML Anda
+    return render_template_string(open("templates/home.html").read())
 
 
 @app.route("/persegi", methods=["POST"])
@@ -32,7 +30,7 @@ def segitiga():
     luas = round(alas * tinggi / 2)
     text = f"""
     Bangun Datar : Segitiga <br>
-    Luas : {luas} <br>
+    Luas : {luas:.0f} <br>
     """
 
     return render_template("result.html", text=text)
@@ -46,7 +44,7 @@ def lingkaran():
 
     text = f"""
     Bangun Datar : Lingkarang <br>
-    Luas : {luas} <br>
+    Luas : {luas:.0f} <br>
     """
 
     return render_template("result.html", text=text)
@@ -60,7 +58,7 @@ def volume():
     volume = panjang * lebar * tinggi
     text = f"""
     Bangun Ruang : Balok <br>
-    Volume : {volume}cm3 <br>
+    Volume : {volume:.0f}cm3 <br>
     """
 
     return render_template("result.html", text=text)
